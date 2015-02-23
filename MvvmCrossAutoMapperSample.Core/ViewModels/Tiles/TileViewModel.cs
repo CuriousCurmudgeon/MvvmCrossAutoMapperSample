@@ -17,13 +17,6 @@ namespace MvvmCrossAutoMapperSample.Core.ViewModels.Tiles
             _tileService = tileService;
         }
 
-        private int _timesClicked;
-        public int TimesClicked
-        {
-            get { return _timesClicked; }
-            set { _timesClicked = value; RaisePropertyChanged(() => TimesClicked); }
-        }
-
         private string _color;
         public string Color
         {
