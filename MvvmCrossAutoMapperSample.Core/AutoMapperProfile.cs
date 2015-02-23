@@ -34,7 +34,8 @@ namespace MvvmCrossAutoMapperSample.Core
             Mapper.CreateMap<Tile, TileViewModel>()
                 .Include<DateTimeTile, DateTimeTileViewModel>()
                 .Include<EmailTile, EmailTileViewModel>()
-                .Include<TemperatureTile, TemperatureTileViewModel>();
+                .Include<TemperatureTile, TemperatureTileViewModel>()
+                .ConstructUsingServiceLocator();
         }
 
     }
